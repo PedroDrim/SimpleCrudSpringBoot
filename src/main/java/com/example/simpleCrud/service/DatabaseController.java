@@ -59,7 +59,11 @@ public class DatabaseController {
      */
     @DeleteMapping("/client")
     public void deleteClient(@RequestBody String clientId) throws DatabaseException {
-        clientId = clientId.replaceAll("\"", "");
-        this.crudManager.deleteData(clientId);
+        try {
+            clientId = clientId.replaceAll("\"", "");
+            this.crudManager.deleteData(clientId);
+        } catch (DatabaseException e) {
+            throw new ResponseStatusException(HttpStatusCode.valueOf(400));
+        }
     }
 }
