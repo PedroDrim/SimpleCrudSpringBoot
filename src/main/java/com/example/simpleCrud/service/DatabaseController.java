@@ -23,12 +23,12 @@ public class DatabaseController {
     }
 
     /**
-     * Metodo http GET /client
+     * Metodo http GET /Buscar
      * @param clientId  Identificador do cliente a ser verificado
      * @throws DatabaseException Excessao de request
      * @return Cliente selecionado
      */
-    @GetMapping("/client")
+    @GetMapping("/Buscar")
     public SimpleClient getCLient(@RequestBody String clientId) throws DatabaseException {
         try {
             clientId = clientId.replaceAll("\"", "");
@@ -39,11 +39,11 @@ public class DatabaseController {
     }
 
     /**
-     * Metodo http POST /client
+     * Metodo http POST /Cadastrar
      * @param newClient Cliente a ser adicionado
      * @throws DatabaseException Excessao de request
      */
-    @PostMapping("/client")
+    @PostMapping("/Cadastrar")
     public void postClient(@RequestBody SimpleClient newClient) throws DatabaseException {
         try {
             this.crudManager.putData(newClient);
@@ -53,11 +53,11 @@ public class DatabaseController {
     }
 
     /**
-     * Metodo http DELETE /client
+     * Metodo http DELETE /Excluir
      * @param clientId Identificador do cliente a ser removido
      * @throws DatabaseException Excessao de request
      */
-    @DeleteMapping("/client")
+    @DeleteMapping("/Excluir")
     public void deleteClient(@RequestBody String clientId) throws DatabaseException {
         try {
             clientId = clientId.replaceAll("\"", "");
