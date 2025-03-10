@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.simpleCrud.model.SimpleSerializationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-10T21:42:29" hostname="pedro-Aspire-A515-57" time="0.002">
+  <properties/>
+  <testcase name="methodSerializeMustBeCalled()" classname="com.example.simpleCrud.model.SimpleSerializationTests" time="0.002"/>
+  <system-out><![CDATA[2025-03-10T18:42:29.702-03:00  INFO 31119 --- [GeneticAlgorithmDocker] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.simpleCrud.model.SimpleSerializationTests]: SimpleSerializationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-03-10T18:42:29.703-03:00  INFO 31119 --- [GeneticAlgorithmDocker] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.simpleCrud.SimpleCrudApplication for test class com.example.simpleCrud.model.SimpleSerializationTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
